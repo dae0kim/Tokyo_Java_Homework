@@ -85,7 +85,7 @@ public class DeliveryDAO {
 			pw.println("id,name,price,posOrderCnt,orderCnt"); // csv파일 머릿말
 			
 			for (DeliveryDTO dto : deliveryList) {
-				pw.printf("%d,%s,%d,%d\n", dto.getId(), dto.getName(), dto.getPrice(), dto.getPosOrderCnt(), dto.getOrderCnt());
+				pw.printf("%d,%s,%d,%d,%d\n", dto.getId(), dto.getName(), dto.getPrice(), dto.getPosOrderCnt(), dto.getOrderCnt());
 			}
 			
 		} catch (Exception e) {
